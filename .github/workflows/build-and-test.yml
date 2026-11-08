@@ -15,8 +15,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-      - name: mvn build
-        run: mvn clean install -DskipTests=true
       - name: mvn testing
         run: mvn test
       - name: docker image build
